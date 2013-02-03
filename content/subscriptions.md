@@ -96,7 +96,7 @@ Feed url can be the fully qualified url to the feed like `http://daringfireball.
 Delete Subscription
 -------------------
 
-`GET /api/v1/subscriptions/3.json` will delete the subscription with and id of `3`
+`DELETE /api/v1/subscriptions/3.json` will delete the subscription with and id of `3`
 
 **Status Codes**
 
