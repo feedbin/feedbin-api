@@ -47,9 +47,16 @@ Pagination
 Entries use pagination. Each page has a limit of 100 items. Paginated request will include a link header like:
 
 ```
-Link: <https://feedbin.me/api/v1/feeds/1/entries.json?page=2>; rel="next",
-      <https://feedbin.me/api/v1/feeds/1/entries.json?page=5>; rel="last"
+Link: <https://feedbin.me/api/v1/feeds/1/entries.json?page=2>; rel="next", <https://feedbin.me/api/v1/feeds/1/entries.json?page=5>; rel="last"
 ```
+
+The possible rel values are:
+
+- `first` The URL of the first page of results.
+- `prev` The URL of the previous page of results.
+- `next` The URL of the next page of results.
+- `last` The URL of the last page of results.
+
 
 API Objects
 -----------
@@ -57,3 +64,5 @@ API Objects
 - [Subscriptions](content/subscriptions.md)
 - [Feeds](content/feeds.md)
 - [Entries](content/entries.md)
+- [Entry States](content/entry-states.md)
+

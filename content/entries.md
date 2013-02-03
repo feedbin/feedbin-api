@@ -4,7 +4,7 @@ Entries
 Get Entries
 -----------
 
-Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
+Entries belong to feeds. To get all the entries for a feed use the `feed_id`. The entry attributes vary from the original feed in several ways. Links and image sources are rewritten to always point to the source. The created_at date is converted to UTC.
 
 - `GET /api/v1/feeds/203/entries.json` will return all entries for feed `203`
 
@@ -33,10 +33,34 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
 
 **Parameters**
 
+ - `page: optional` `GET /api/v1/feeds/203/entries.json?page=2` will get page two of the available entries
  - `since: optional` `GET /api/v1/feeds/203/entries.json?since=2013-02-02T14:07:33Z` will get all entries created after the iso 8601 timestamp.
 
 **Status Codes**
 
 - `200 OK` will be returned if found
-- `404 Not Found` will be returned if no feed is found
+- `404 Not Found` will be returned if no feed is found, or if the page number does not exist
 - `403 Forbidden` will be returned if the user does not subscribe to this feed
+
+Get Entry
+---------
+
+- `GET /api/v1/feeds/203/entries/3648.json` will return just entry `3648`
+
+```json
+{
+  "id": 3648,
+  "title": "Cleveland Drinkup February 6",
+  "url": "https:\/\/github.com\/blog\/1398-cleveland-drinkup-february-6",
+  "author": "juliamae",
+  "content": "<p>Cleveland <img class=\"emoji\" title=\":metal:\" alt=\":metal:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/metal.png\" height=\"20\" width=\"20\" align=\"absmiddle\">! Let's <img class=\"emoji\" title=\":beers:\" alt=\":beers:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/beers.png\" height=\"20\" width=\"20\" align=\"absmiddle\"><img class=\"emoji\" title=\":cocktail:\" alt=\":cocktail:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/cocktail.png\" height=\"20\" width=\"20\" align=\"absmiddle\"><img class=\"emoji\" title=\":neckbeard:\" alt=\":neckbeard:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/neckbeard.png\" height=\"20\" width=\"20\" align=\"absmiddle\"><img class=\"emoji\" title=\":guitar:\" alt=\":guitar:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/guitar.png\" height=\"20\" width=\"20\" align=\"absmiddle\"><img class=\"emoji\" title=\":octocat:\" alt=\":octocat:\" src=\"https:\/\/a248.e.akamai.net\/assets.github.com\/images\/icons\/emoji\/octocat.png\" height=\"20\" width=\"20\" align=\"absmiddle\"> in one of Ohio's greatest cities, Cleveland!<\/p>\n\n<p>Join <a href=\"https:\/\/github.com\/asenchi\" class=\"user-mention\">@asenchi<\/a> and me Wednesday at the <a href=\"http:\/\/www.yelp.com\/biz\/great-lakes-brewing-company-cleveland-4\">Great Lakes Brewing Company Taproom<\/a>, drinks on GitHub.<\/p>\n\n<p><img src=\"https:\/\/f.cloud.github.com\/assets\/849\/119266\/79ef6bbe-6c9e-11e2-9150-47d7da0b85c9.jpg\" alt=\"Great Lakes Taproom\"><\/p>\n\n<p><strong>The Facts:<\/strong><\/p>\n\n<ul>\n<li>\n<a href=\"http:\/\/www.greatlakesbrewing.com\/brewpub\/around-the-brewpub\">Great Lakes Brewing Company<\/a> - <a href=\"https:\/\/maps.google.com\/?q=2516+Market+Ave,+Cleveland,+OH,+USA\">2516 Market Ave<\/a>\n<\/li>\n<li>Wednesday, February 6 at 8:00pm<\/li>\n<\/ul><p><a href=\"https:\/\/maps.google.com\/?q=2516+Market+Ave,+Cleveland,+OH,+USA\"><img src=\"https:\/\/f.cloud.github.com\/assets\/849\/119328\/c8cbb682-6ca0-11e2-81c8-246e4027f892.png\" alt=\"Screen Shot 2013-02-01 at 1 53 02 PM\"><\/a>          <\/p>",
+  "summary": null,
+  "created_at": "2013-02-01T19:02:43Z"
+}
+```
+
+**Status Codes**
+
+- `200 OK` will be returned if found
+- `404 Not Found` will be returned if no entry is found
+- `403 Forbidden` will be returned if the user does not subscribe to the feed this entry belongs to
