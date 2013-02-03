@@ -33,10 +33,10 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
 
 **Parameters**
 
- - **`since: optional`** `GET /api/v1/feeds/203/entries.json?since=2013-02-02T14:07:33Z` will get all entries created after the iso 8601 timestamp.
+ - `since: optional` `GET /api/v1/feeds/203/entries.json?since=2013-02-02T14:07:33Z` will get all entries created after the iso 8601 timestamp.
 
 **Status Codes**
 
-- **`200 OK`** will be returned if found
-- **`404 Not Found`** will be returned if no feed is found
-- **`403 Forbidden`** will be returned if the user does not subscribe to this feed
+- `200 OK` will be returned if found
+- `404 Not Found` will be returned if no feed is found
+- `403 Forbidden` will be returned if the user does not subscribe to this feed

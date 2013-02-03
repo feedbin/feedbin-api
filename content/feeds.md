@@ -17,5 +17,5 @@ Get Feed
 
 **Status Codes**
 
-- **`200 OK`** will be returned if found
-- **`404 Not Found`** will be returned if no feed is found
+- `200 OK` will be returned if found
+- `404 Not Found` will be returned if no feed is found
