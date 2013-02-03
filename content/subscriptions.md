@@ -31,7 +31,7 @@ Get Subscriptions
 Get Subscription
 ----------------
 
-- `GET /api/v1/subscriptions/3.json` will return the message with an id of `3`
+- `GET /api/v1/subscriptions/3.json` will return the feed with an id of `3`
 
 ```json
 {

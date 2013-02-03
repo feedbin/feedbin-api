@@ -42,9 +42,18 @@ curl -v -u 'example@example.com:password' --header 'If-Modified-Since:Sat, 02 Fe
 < HTTP/1.1 304 Not Modified
 ```
 
-You can use the headers like 
+Pagination
+----------
+Entries use pagination. Each page has a limit of 100 items. Paginated request will include a link header like:
+
+```
+Link: <https://feedbin.me/api/v1/feeds/1/entries.json?page=2>; rel="next",
+      <https://feedbin.me/api/v1/feeds/1/entries.json?page=5>; rel="last"
+```
 
 API Objects
 -----------
 
 - [Subscriptions](content/subscriptions.md)
+- [Feeds](content/feeds.md)
+- [Entries](content/entries.md)
