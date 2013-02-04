@@ -4,7 +4,7 @@ Feeds
 Get Feed
 --------
 
-- `GET /api/v1/feeds/1.json` will return the feed with an id of `1`
+- `GET /v1/feeds/1.json` will return the feed with an id of `1`
 
 ```json
 {

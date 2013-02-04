@@ -6,7 +6,7 @@ Entry states provide the users state information include read state and starred 
 Get Entry States
 ----------------
 
- - `GET /api/v1/entry_states.json` will return all entry states.
+ - `GET /v1/entry_states.json` will return all entry states.
 
 
 ```json
@@ -30,13 +30,13 @@ Get Entry States
 
 **Parameters**
 
- - `page: optional` `GET /api/v1/entry_states.json?page=2` will get page two of the entry states
- - `since: optional` `GET /api/v1/entry_states.json?since=2013-02-02T14:07:33Z` will get all entry states *updated* after 8601 timestamp.
+ - `page: optional` `GET /v1/entry_states.json?page=2` will get page two of the entry states
+ - `since: optional` `GET /v1/entry_states.json?since=2013-02-02T14:07:33Z` will get all entry states *updated* after 8601 timestamp.
 
 Get Entry State
 ---------------
 
- - `GET /api/v1/entry_states/56.json` will return the entry state for entry_id `56`
+ - `GET /v1/entry_states/56.json` will return the entry state for entry_id `56`
 
 ```json
 {

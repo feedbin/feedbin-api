@@ -6,7 +6,7 @@ Get Entries
 
 Entries belong to feeds. To get all the entries for a feed use the `feed_id`. The entry attributes vary from the original feed in several ways. Links and image sources are rewritten to always point to the source. The created_at date is converted to UTC.
 
-- `GET /api/v1/feeds/203/entries.json` will return all entries for feed `203`
+- `GET /v1/feeds/203/entries.json` will return all entries for feed `203`
 
 ```json
 [
@@ -33,8 +33,8 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`. Th
 
 **Parameters**
 
- - `page: optional` `GET /api/v1/feeds/203/entries.json?page=2` will get page two of the available entries
- - `since: optional` `GET /api/v1/feeds/203/entries.json?since=2013-02-02T14:07:33Z` will get all entries created after the iso 8601 timestamp.
+ - `page: optional` `GET /v1/feeds/203/entries.json?page=2` will get page two of the available entries
+ - `since: optional` `GET /v1/feeds/203/entries.json?since=2013-02-02T14:07:33Z` will get all entries created after the iso 8601 timestamp.
 
 **Status Codes**
 
@@ -45,7 +45,7 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`. Th
 Get Entry
 ---------
 
-- `GET /api/v1/feeds/203/entries/3648.json` will return just entry `3648`
+- `GET /v1/feeds/203/entries/3648.json` will return just entry `3648`
 
 ```json
 {

@@ -4,7 +4,7 @@ Subscriptions
 Get Subscriptions
 -----------------
 
- - `GET /api/v1/subscriptions.json` will return all subscriptions.
+ - `GET /v1/subscriptions.json` will return all subscriptions.
 
 ```json
 [
@@ -20,7 +20,7 @@ Get Subscriptions
 
 **Parameters**
 
- - `since: optional` `GET /api/v1/subscriptions.json?since=2013-02-02T14:07:33Z` will get all subscriptions created after the iso 8601 timestamp.
+ - `since: optional` `GET /v1/subscriptions.json?since=2013-02-02T14:07:33Z` will get all subscriptions created after the iso 8601 timestamp.
 
 **Status Codes**
 
@@ -31,7 +31,7 @@ Get Subscriptions
 Get Subscription
 ----------------
 
-- `GET /api/v1/subscriptions/3.json` will return the feed with an id of `3`
+- `GET /v1/subscriptions/3.json` will return the feed with an id of `3`
 
 ```json
 {
@@ -51,7 +51,7 @@ Get Subscription
 Create Subscription
 -------------------
 
-- `POST /api/v1/subscriptions.json` will create a new subscription to the specified `feed_url`
+- `POST /v1/subscriptions.json` will create a new subscription to the specified `feed_url`
 
 ```json
 {
@@ -70,7 +70,7 @@ Feed url can be the fully qualified url to the feed like `http://daringfireball.
 
 **Request**
 
-`POST /api/v1/subscriptions.json`
+`POST /v1/subscriptions.json`
 
 ```json
 {
@@ -96,7 +96,7 @@ Feed url can be the fully qualified url to the feed like `http://daringfireball.
 Delete Subscription
 -------------------
 
-`DELETE /api/v1/subscriptions/3.json` will delete the subscription with and id of `3`
+`DELETE /v1/subscriptions/3.json` will delete the subscription with and id of `3`
 
 **Status Codes**
 
