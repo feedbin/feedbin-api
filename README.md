@@ -1,6 +1,14 @@
 Feedbin API
 ===========
 
+API Objects
+-----------
+
+- [Subscriptions](content/subscriptions.md)
+- [Feeds](content/feeds.md)
+- [Entries](content/entries.md)
+- [Entry States](content/entry-states.md)
+
 Making Requests
 ---------------
 
@@ -56,13 +64,3 @@ The possible rel values are:
 - `prev` The URL of the previous page of results.
 - `next` The URL of the next page of results.
 - `last` The URL of the last page of results.
-
-
-API Objects
------------
-
-- [Subscriptions](content/subscriptions.md)
-- [Feeds](content/feeds.md)
-- [Entries](content/entries.md)
-- [Entry States](content/entry-states.md)
-
