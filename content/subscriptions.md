@@ -53,20 +53,27 @@ Create Subscription
 
 - `POST /v1/subscriptions.json` will create a new subscription to the specified `feed_url`
 
+**Request**
+
 ```json
 {
   "feed_url": "http://daringfireball.net/index.xml",
 }
 ```
 
-Feed url can be the fully qualified url to the feed like `http://daringfireball.net/index.xml`, or the url to the website like `daringfireball.net`
+**Parameters**
+
+- `feed_url required` can be the fully qualified url to the feed like `http://daringfireball.net/index.xml`, or the url to the website like `daringfireball.net`
 
 **Status Codes**
 
 - `201 Created` will be returned if subscription is successful, the `Location` header will have the URL to the newly created subscription
 - `302 Found` will be returned if subscription exists, the `Location` header will have the URL to the newly created subscription
 - `404 Not Found` will be returned if no feed is found at the `feed_url`
-- `300 Multiple Choices` will be returned if multiple feeds are found at the `feed_url` for example: 
+- `300 Multiple Choices` will be returned if multiple feeds are found at the `feed_url` 
+
+
+If a `300 Multiple Choices` is returned, it means the requested site exposes more than one feed. In this case the response will let you know what the options are. For example:
 
 **Request**
 
