@@ -26,8 +26,7 @@ Get Subscriptions
 
 - `200 OK` will be returned if found
 - `403 Forbidden` will be returned if the user does not own this subscription
- 
- 
+
 Get Subscription
 ----------------
 
