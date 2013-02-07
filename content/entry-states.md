@@ -76,7 +76,7 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
     {
       "entry_id": 1,
       "read": true,
-      "read": starred,
+      "starred": true,
     }
   ]
 }
