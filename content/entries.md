@@ -4,9 +4,9 @@ Entries
 Get Entries
 -----------
 
-You can get all entries for a user sorted by `created_at`. The entry attributes vary from the original feed in several ways. Links and image sources are rewritten to always point to the source. The created_at date is converted to UTC.
+You can get all entries for a user sorted by `created_at` descending. The entry attributes vary from the original feed in several ways. Links and image sources are rewritten to always point to the source. The created_at date is converted to UTC.
 
-- `GET /v1/entries.json` will return all entries for feed `203`
+- `GET /v1/entries.json` will return all entries for the user.
 
 ```json
 [
