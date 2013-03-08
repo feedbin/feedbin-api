@@ -10,6 +10,7 @@ API Objects
 - [Feeds](content/feeds.md)
 - [Entries](content/entries.md)
 - [Entry States](content/entry-states.md)
+- Tags (coming soon)
 
 Making Requests
 ---------------
