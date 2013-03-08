@@ -1,6 +1,8 @@
 Feedbin API
 ===========
 
+This is the official documentation for the Feedbin REST-style API.
+
 API Objects
 -----------
 
