@@ -9,18 +9,18 @@ Get Subscriptions
 ```json
 [
   {
-    "id":3,
-    "created_at":"2013-02-02T15:20:46Z",
-    "title":"Daring Fireball",
-    "feed_url":"http://daringfireball.net/index.xml",
-    "site_url":"http://daringfireball.net"
+    "id": 3,
+    "created_at": "2013-03-08T09:44:20.449047Z",
+    "title": "Daring Fireball",
+    "feed_url": "http://daringfireball.net/index.xml",
+    "site_url": "http://daringfireball.net"
   }
 ]
 ```
 
 **Parameters**
 
- - `since: optional` `GET /v1/subscriptions.json?since=2013-02-02T14:07:33Z` will get all subscriptions created after the iso 8601 timestamp.
+ - `since: optional` `GET /v1/subscriptions.json?since=2013-03-08T09:44:20.449047Z` will get all subscriptions created after the iso 8601 timestamp.
 
 **Status Codes**
 
@@ -35,7 +35,7 @@ Get Subscription
 ```json
 {
   "id":3,
-  "created_at":"2013-02-02T15:20:46Z",
+  "created_at":"2013-03-08T09:44:20.449047Z",
   "title":"Daring Fireball",
   "feed_url":"http://daringfireball.net/index.xml",
   "site_url":"http://daringfireball.net"

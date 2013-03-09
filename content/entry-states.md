@@ -1,7 +1,7 @@
 Entry States
 ============
 
-Entry states provide the users state information include read state and starred state.
+Entry states provide the users state information include read state and starred state. If an entry does not have an entry state, all attributes should be assumed false.
 
 Get Entry States
 ----------------
@@ -14,8 +14,8 @@ Get Entry States
     "entry_id": 56,
     "read": true,
     "starred": true,
-    "starred_updated_at": "2013-02-09T01:47:59Z",
-    "read_updated_at": "2013-02-09T01:47:59Z"
+	"starred_updated_at": "2013-03-09T04:04:29.276038Z",
+	"read_updated_at": "2013-03-09T04:04:29.656288Z"
   },
   {
     "entry_id": 23,
@@ -42,8 +42,8 @@ Get Entry State
   "entry_id": 56,
   "read": true,
   "starred": true,
-  "starred_updated_at": "2013-02-09T01:47:59Z",
-  "read_updated_at": "2013-02-09T01:47:59Z"
+  "starred_updated_at": "2013-03-09T04:04:29.276038Z",
+  "read_updated_at": "2013-03-09T04:04:29.656288Z"
 }
 ```
 
@@ -70,8 +70,8 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
       "entry_id": 1,
       "read": true,
       "starred": true,
-      "starred_updated_at": "2013-02-09T01:47:59Z",
-      "read_updated_at": "2013-02-09T01:47:59Z"
+      "starred_updated_at": "2013-03-09T04:04:29.656289Z",
+      "read_updated_at": "2013-03-09T04:04:30.656288Z"
     },
     {
       "entry_id": 1,
@@ -99,8 +99,8 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
       "entry_id": 1,
       "read": true,
       "starred": true,
-      "starred_updated_at": "2013-02-09T01:47:59Z",
-      "read_updated_at": "2013-02-09T01:47:59Z"
+      "starred_updated_at": "2013-03-09T04:04:29.656289Z",
+      "read_updated_at": "2013-03-09T04:04:30.656288Z"
     }
   ],
   "failed": [
