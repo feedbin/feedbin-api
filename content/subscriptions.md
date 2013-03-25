@@ -6,14 +6,16 @@ Get Subscriptions
 
  - `GET /v1/subscriptions.json` will return all subscriptions.
 
+
 ```json
 [
   {
-    "id": 3,
-    "created_at": "2013-03-08T09:44:20.449047Z",
+    "id": 525,
+    "created_at": "2013-03-12T11:30:25.209432Z",
+    "feed_id": 47,
     "title": "Daring Fireball",
     "feed_url": "http://daringfireball.net/index.xml",
-    "site_url": "http://daringfireball.net"
+    "site_url": "http://daringfireball.net/"
   }
 ]
 ```
@@ -34,11 +36,12 @@ Get Subscription
 
 ```json
 {
-  "id":3,
-  "created_at":"2013-03-08T09:44:20.449047Z",
-  "title":"Daring Fireball",
-  "feed_url":"http://daringfireball.net/index.xml",
-  "site_url":"http://daringfireball.net"
+  "id": 525,
+  "created_at": "2013-03-12T11:30:25.209432Z",
+  "feed_id": 47,
+  "title": "Daring Fireball",
+  "feed_url": "http://daringfireball.net/index.xml",
+  "site_url": "http://daringfireball.net/"
 }
 ```
 
