@@ -50,6 +50,7 @@ When `include_entry_state` is true the response looks like:
       "entry_id": 2077,
       "read": true,
       "starred": true,
+      "updated_at": "2013-03-09T04:04:29.656288Z",
       "starred_updated_at": "2013-03-09T04:04:29.276038Z",
       "read_updated_at": "2013-03-09T04:04:29.656288Z"
     }
