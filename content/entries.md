@@ -28,7 +28,7 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 
  - `page: optional (integer)` `GET /v1/entries.json?page=2` will get page two of the available entries
  - `since: optional (ISO 8601 date)` `GET /v1/entries.json?since=2013-02-02T14:07:33.000000Z` will get all entries created after the iso 8601 timestamp.
- - `include_entry_state: optional (true or false)` `GET /v1/entries.json?include_entry_state=true` will include the entire [`entry_state`](content/entry-states.md) object with each entry
+ - `include_entry_state: optional (true or false)` `GET /v1/entries.json?include_entry_state=true` will include the entire [`entry_state`](entry-states.md) object with each entry.
  - `read: optional (true or false)` `GET /v1/entries.json?read=false` will get all unread entries. If used `include_entry_state=true` is set as well.
  - `starred: optional (true or false)` `GET /v1/entries.json?starred=true` will get all starred entries. If used `include_entry_state=true` is set as well.
 
