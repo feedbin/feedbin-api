@@ -77,7 +77,7 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
       "read_updated_at": "2013-03-09T04:04:30.656288Z"
     },
     {
-      "entry_id": 1,
+      "entry_id": 3,
       "read": true,
       "starred": true,
     }
