@@ -24,15 +24,15 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 ]
 ```
 
-**Parameters**
+| Parameter                        | Required | Example                                                                                                                          |
+| -------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `page: number`                   | false    | `GET /v1/entries.json?page=2`  will get page two of the available entries                                                        |
+| `since: date`                    | false    | `GET /v1/entries.json?since=2013-02-02T14:07:33.000000Z`  will get all entries created after the iso 8601 timestamp.             |
+| `include_entry_state: boolean`   | false    | `GET /v1/entries.json?include_entry_state=true` will include the entire [`entry_state`](entry-states.md) object with each entry. |
+| `read: boolean`                  | false    | `GET /v1/entries.json?read=false`  will get all unread entries. If used `include_entry_state=true` is set as well.               |
+| `starred: boolean`               | false    | `GET /v1/entries.json?starred=true`  will get all starred entries. If used `include_entry_state=true` is set as well.            |
+| `ids: number(s)`                 | false    | `GET /v1/entries.json?ids=1,2,3`  will get the entries with the ids 1, 2 and 3.                                                  |
 
- - `page: optional (integer)` `GET /v1/entries.json?page=2` will get page two of the available entries
- - `since: optional (ISO 8601 date)` `GET /v1/entries.json?since=2013-02-02T14:07:33.000000Z` will get all entries created after the iso 8601 timestamp.
- - `include_entry_state: optional (true or false)` `GET /v1/entries.json?include_entry_state=true` will include the entire [`entry_state`](entry-states.md) object with each entry.
- - `read: optional (true or false)` `GET /v1/entries.json?read=false` will get all unread entries. If used `include_entry_state=true` is set as well.
- - `starred: optional (true or false)` `GET /v1/entries.json?starred=true` will get all starred entries. If used `include_entry_state=true` is set as well.
- - `ids: optional (1,2,3)` `GET /v1/entries.json?ids=1,2,3` will get the entries with the ids 1, 2 and 3.
- 
 When `include_entry_state` is true the response looks like:
 
 ```json

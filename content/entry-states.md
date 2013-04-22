@@ -29,10 +29,10 @@ Get Entry States
 ]
 ```
 
-**Parameters**
-
- - `page: optional` `GET /v1/entry_states.json?page=2` will get page two of the entry states
- - `since: optional` `GET /v1/entry_states.json?since=2013-02-02T14:07:33Z` will get all entry states *updated* after ISO 8601 timestamp.
+| Parameter      | Required | Example                                                                                                              |
+| -------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
+| `page: number` | false    | `GET /v1/entry_states.json?page=2` will get page two of the entry states                                             |
+| `since: date`  | false    | `GET /v1/entry_states.json?since=2013-02-02T14:07:33Z` will get all entry states *updated* after ISO 8601 timestamp. |
 
 Get Entry State
 ---------------
@@ -85,13 +85,14 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
 }
 ```
 
-**Parameters**
+| Parameter                        | Required    | Example                                      |
+| -------------------------------- | --------    | -------------------------------------------- |
+| `entry_id: number`               | true        |                                              |
+| `starred_updated_at: date`       | conditional | Required when attempting to change `starred` |
+| `read_updated_at: date`          | conditional | Required when attempting to change `read`    |
+| `read: boolean`                  | false       |                                              |
+| `starred: boolean`               | false       |                                              |
 
- - `entry_id required`
- - `starred_updated_at conditionally required` - an ISO 8601 timestamp. Required when attempting to change `starred`
- - `read_updated_at conditionally required` - an ISO 8601 timestamp. Required when attempting to change `read`
- - `read` - boolean. True if read, false if unread
- - `starred` - boolean. True if starred, false if not starred
 
 **Response**
 

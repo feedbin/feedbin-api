@@ -19,10 +19,9 @@ Get Subscriptions
   }
 ]
 ```
-
-**Parameters**
-
- - `since: optional` `GET /v1/subscriptions.json?since=2013-03-08T09:44:20.449047Z` will get all subscriptions created after the iso 8601 timestamp.
+| Parameter                        | Required | Example                                                                                                                          |
+| -------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `since: date`                    | false    | `GET /v1/subscriptions.json?since=2013-03-08T09:44:20.449047Z` will get all subscriptions created after the iso 8601 timestamp.  |
 
 **Status Codes**
 
@@ -63,9 +62,10 @@ Create Subscription
 }
 ```
 
-**Parameters**
+| Parameter          | Required | Example                                                                                                                                    |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `feed_url: string` | true     | can be the fully qualified url to the feed like `http://daringfireball.net/index.xml`, or the url to the website like `daringfireball.net` |
 
-- `feed_url required` can be the fully qualified url to the feed like `http://daringfireball.net/index.xml`, or the url to the website like `daringfireball.net`
 
 **Status Codes**
 

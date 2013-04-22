@@ -58,10 +58,10 @@ Create Tagging
 }
 ```
 
-**Parameters**
-
-- `feed_id required` the id of the feed to tag
-- `name required` the display name of the tag
+| Parameter                        | Required |
+| -------------------------------- | -------- |
+| `feed_id: number`                | true     |
+| `name: string`                   | true     |
 
 **Status Codes**
 
