@@ -88,7 +88,7 @@ If the timestamp that is sent is older than the timestamp that is saved, **the u
 **Parameters**
 
  - `entry_id required`
- - `starred_updated_at conditionally required` - an ISO 8601 timestamp. Required when attempting to change `read`
+ - `starred_updated_at conditionally required` - an ISO 8601 timestamp. Required when attempting to change `starred`
  - `read_updated_at conditionally required` - an ISO 8601 timestamp. Required when attempting to change `read`
  - `read` - boolean. True if read, false if unread
  - `starred` - boolean. True if starred, false if not starred

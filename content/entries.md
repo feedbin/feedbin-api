@@ -31,6 +31,7 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
  - `include_entry_state: optional (true or false)` `GET /v1/entries.json?include_entry_state=true` will include the entire [`entry_state`](entry-states.md) object with each entry.
  - `read: optional (true or false)` `GET /v1/entries.json?read=false` will get all unread entries. If used `include_entry_state=true` is set as well.
  - `starred: optional (true or false)` `GET /v1/entries.json?starred=true` will get all starred entries. If used `include_entry_state=true` is set as well.
+ - `ids: optional (1,2,3)` `GET /v1/entries.json?ids=1,2,3` will get the entries with the ids 1, 2 and 3.
  
 When `include_entry_state` is true the response looks like:
 
