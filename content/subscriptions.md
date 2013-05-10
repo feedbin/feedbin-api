@@ -31,7 +31,7 @@ Get Subscriptions
 Get Subscription
 ----------------
 
-- `GET /v1/subscriptions/3.json` will return the feed with an id of `3`
+- `GET /v1/subscriptions/525.json` will return the feed with an id of `525`
 
 ```json
 {
