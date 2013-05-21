@@ -117,7 +117,7 @@ Update Subscription
 
 Updating a subscrition can be used to set a custom title for a feed.
 
-`PATCH /v2/subscriptions/525.json` will update the subscription with and id of `3`
+`PATCH /v2/subscriptions/525.json` will update the subscription with and id of `525`
 
 
 **Request**
