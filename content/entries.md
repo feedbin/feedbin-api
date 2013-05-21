@@ -56,7 +56,7 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
 
 **Parameters**
 
-Supports the same parameters as `/v2/entries.json`
+Supports the same parameters as `/v2/entries.json`, except the `ids` parameter.
 
 **Status Codes**
 
