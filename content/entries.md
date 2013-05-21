@@ -31,6 +31,7 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 | `read: boolean`    | false    | `GET /v2/entries.json?read=false`  will get all unread entries.                                                     |
 | `starred: boolean` | false    | `GET /v2/entries.json?starred=true`  will get all starred entries.                                                  |
 | `ids: number(s)`   | false    | `GET /v2/entries.json?ids=1,2,3`  will get the entries with the ids 1, 2 and 3.                                     |
+| `per_page: number` | false    | `GET /v2/entries.json?per_page=50`  will limit results to 50 per page.                                              |
 
 
 Entries belong to feeds. To get all the entries for a feed use the `feed_id`. 
@@ -55,7 +56,7 @@ Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
 
 **Parameters**
 
-Supports the same parameters as `/v2/entries.json`
+Supports the same parameters as `/v2/entries.json`, except the `ids` parameter.
 
 **Status Codes**
 
