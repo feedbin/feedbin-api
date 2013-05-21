@@ -15,6 +15,11 @@ API Objects
 - [Starred Entries](content/starred-entries.md)
 - [Taggings](content/taggings.md)
 
+Changes
+-------
+2013-05-20: Added `PATCH subscriptions.json` for editing feed titles to [Subscriptions](content/subscriptions.md)
+2013-05-20: Added `per_page` paramter to [Entries](content/entries.md)
+
 Upgrading from v1
 -----------------
 

@@ -58,7 +58,7 @@ Create Subscription
 
 ```json
 {
-  "feed_url": "http://daringfireball.net/index.xml",
+  "feed_url": "http://daringfireball.net/index.xml"
 }
 ```
 
@@ -83,7 +83,7 @@ If a `300 Multiple Choices` is returned, it means the requested site exposes mor
 
 ```json
 {
-  "feed_url": "https://blog.github.com",
+  "feed_url": "https://blog.github.com"
 }
 ```
 
@@ -110,4 +110,38 @@ Delete Subscription
 **Status Codes**
 
 - `204 No Content` will be returned if the request was successful
+- `403 Forbidden` will be returned if the user does not own this subscription
+
+Update Subscription
+-------------------
+
+Updating a subscrition can be used to set a custom title for a feed.
+
+`PATCH /v2/subscriptions/525.json` will update the subscription with and id of `3`
+
+
+**Request**
+
+```json
+{
+  "title": "Custom Title"
+}
+```
+
+**Response**
+
+```json
+{
+  "id": 525,
+  "created_at": "2013-03-12T11:30:25.209432Z",
+  "feed_id": 47,
+  "title": "Custom Title",
+  "feed_url": "http://daringfireball.net/index.xml",
+  "site_url": "http://daringfireball.net/"
+}
+```
+
+**Status Codes**
+
+- `200 OK` will be returned if the request was successful
 - `403 Forbidden` will be returned if the user does not own this subscription
