@@ -99,3 +99,16 @@ Dates
 The Feedbin API uses the [ISO 8601](http://www.w3.org/TR/NOTE-datetime) date format. All responses will include dates formatted to this spec and all requests should stick to it as well. The dates are as high resolution as possible to allow for rapid state changes. When using the `since` parameter it is best to include the date exactly as it was returned by the server when the last request was made. Rounding down to the nearest second will most likely cause duplicates.
 
 The date should include complete date plus hours, minutes, seconds and timezone `YYYY-MM-DDThh:mm:ss.ssssssTZD` (eg `2013-02-19T07:33:38.449047-08:00` or in UTC `2013-02-19T15:33:38.449047Z`). All dates will be converted to UTC, so the timezone is very important.
+
+**Note**
+
+In Objective-C it's important to force a locale for the date because different regions can cause unexpected output. For example you can properly format a date for the Feedbin API like:
+
+```objectivec
+NSDateFormatter *feedbinDateFormatter = [[NSDateFormatter alloc] init];
+feedbinDateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+[feedbinDateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'"];
+[feedbinDateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+```
+
+Thanks to [Stefan Pauwels](http://zoziapps.ch/) for sharing this tip.
