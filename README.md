@@ -3,7 +3,7 @@ Feedbin API V2
 
 This is the official documentation for the Feedbin REST-style API.
 
-V1 of the api has been deprecated, but the [documentation can still be accessed](v1/README.md). 
+V1 of the api has been deprecated.
 
 API Objects
 -----------
