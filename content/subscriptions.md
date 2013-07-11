@@ -151,3 +151,5 @@ Updating a subscrition can be used to set a custom title for a feed.
 Some proxies block or filter PATCH requests. A POST alternative is available for these cases:
 
 `POST /v2/subscriptions/525/update.json` will update the subscription with and id of `525`
+
+Thanks to [Oliver Fürniß](http://curioustimes.de/) for pointing this out.
