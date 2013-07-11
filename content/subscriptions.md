@@ -145,3 +145,9 @@ Updating a subscrition can be used to set a custom title for a feed.
 
 - `200 OK` will be returned if the request was successful
 - `403 Forbidden` will be returned if the user does not own this subscription
+
+**PATCH Alternative**
+
+Some proxies block or filter PATCH requests. A POST alternative is available for these cases:
+
+`POST /v2/subscriptions/525/update.json` will update the subscription with and id of `525`

@@ -78,3 +78,9 @@ Delete Unread Entries (mark as read)
 **Note** There is a limit of 1,000 entry_ids per request
 
 The response will contain all of the entry_ids that were successfully marked as read. If any ids that were sent are not returned in the response it usually means the user no longer has access to the feed the entry belongs to.
+
+**DELETE Alternative**
+
+Some clients like Android don't easily allow a body with a DELETE request. For these cases there is an alternate endpoint that can be used with POST:
+
+`POST /v2/starred_entries/delete.json`
