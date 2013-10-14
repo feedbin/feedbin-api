@@ -20,24 +20,6 @@ Changes
 - 2013-05-20: Added `PATCH subscriptions.json` for editing feed titles to [Subscriptions](content/subscriptions.md#update-subscription)
 - 2013-05-20: Added `per_page` paramter to [Entries](content/entries.md)
 
-Upgrading from v1
------------------
-
-The `entry_states` object/concept has been removed from v2. Instead the functionality of `entry_states` has been split into [Unread Entries](content/unread-entries.md) and [Starred Entries](content/starred-entries.md). 
-
-The only functionality changes you'll need to make are requests to any /v1/entry_states.json and any code that may reference the entry_state object.
-
-The rest of the API remains the same as v1, so you'll want to find and replace v1 with v2.
-
-Filtered entries.json vs. unread_entries.json
----------------------------------------------
-
-Since `entries.json` supports filters for just getting unread items, why would you want to use `unread_entries.json`?
-
-The issue with just relying on `entries.json?read=false` is things can get out of sync. Since `entries.json` is always sorted by the `created_at` timestamp for the entry, a user could subscribe to a feed today that had entries from yesterday or earlier.
-
-In Feedbin, these entries would show up as unread, but if the API consumer was just using `entries.json?read=false&since=DATE` these entries would be missed.
-
 Making Requests
 ---------------
 
@@ -84,7 +66,7 @@ Pagination
 Entries use pagination. Each page has a limit of 100 items. Paginated request will include a link header like:
 
 ```
-Link: <https://api.feedbin.me/v2/feeds/1/entries.json?page=2>; rel="next", <https://api.feedbin.me/v2/feeds/1/entries.json?page=5>; rel="last"
+Links: <https://api.feedbin.me/v2/feeds/1/entries.json?page=2>; rel="next", <https://api.feedbin.me/v2/feeds/1/entries.json?page=5>; rel="last"
 ```
 
 The possible rel values are:
