@@ -14,9 +14,11 @@ API Objects
 - [Unread Entries](content/unread-entries.md)
 - [Starred Entries](content/starred-entries.md)
 - [Taggings](content/taggings.md)
+- [Saved Searches](content/saved-searches.md)
 
 Changes
 -------
+- 2013-10-14: Added [Saved Search API](content/saved-searches.md)
 - 2013-05-20: Added `PATCH subscriptions.json` for editing feed titles to [Subscriptions](content/subscriptions.md#update-subscription)
 - 2013-05-20: Added `per_page` paramter to [Entries](content/entries.md)
 
