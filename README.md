@@ -8,6 +8,7 @@ V1 of the api has been deprecated.
 API Objects
 -----------
 
+- [Authentication](content/authentication.md)
 - [Subscriptions](content/subscriptions.md)
 - [Feeds](content/feeds.md)
 - [Entries](content/entries.md)
@@ -29,7 +30,7 @@ The base URL for all requests is `https://api.feedbin.me/v2/` Only https is supp
 
 The Feedbin API uses HTTP Basic authentication
 
-Using cURL you would make a request like: 
+Using cURL you would make a request like:
 
 ```shell
 curl -u 'example@example.com:password' https://api.feedbin.me/v2/subscriptions.json
@@ -48,7 +49,7 @@ Without this header you'll wind up with a `415 Unsupported Media Type` response.
 
 HTTP Caching, Use It
 --------------------
-For extra speed, please use HTTP Caching. `GET` request set ETag and a Last-Modified headers. 
+For extra speed, please use HTTP Caching. `GET` request set ETag and a Last-Modified headers.
 
 ```shell
 curl -v -u 'example@example.com:password'  https://api.feedbin.me/v2/subscriptions/3.json
