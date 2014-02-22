@@ -83,4 +83,4 @@ The response will contain all of the entry_ids that were successfully marked as 
 
 Some clients like Android don't easily allow a body with a DELETE request. For these cases there is an alternate endpoint that can be used with POST:
 
-`POST /v2/starred_entries/delete.json`
+`POST /v2/unread_entries/delete.json`
