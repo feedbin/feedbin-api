@@ -28,7 +28,6 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 | ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------- |
 | `page: number`     | false    | `GET /v2/entries.json?page=2`  will get page two of the available entries                                           |
 | `since: date`      | false    | `GET /v2/entries.json?since=2013-02-02T14:07:33.000000Z` will get all entries created after the iso 8601 timestamp. |
-| `read: boolean`    | false    | `GET /v2/entries.json?read=false`  will get all unread entries.                                                     |
 | `starred: boolean` | false    | `GET /v2/entries.json?starred=true`  will get all starred entries.                                                  |
 | `ids: number(s)`   | false    | `GET /v2/entries.json?ids=1,2,3`  will get the entries with the ids 1, 2 and 3.                                     |
 | `per_page: number` | false    | `GET /v2/entries.json?per_page=50`  will limit results to 50 per page.                                              |
