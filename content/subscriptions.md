@@ -105,7 +105,7 @@ If a `300 Multiple Choices` is returned, it means the requested site exposes mor
 Delete Subscription
 -------------------
 
-`DELETE /v2/subscriptions/3.json` will delete the subscription with and id of `3`
+`DELETE /v2/subscriptions/3.json` will delete the subscription with an id of `3`
 
 **Status Codes**
 
@@ -117,7 +117,7 @@ Update Subscription
 
 Updating a subscrition can be used to set a custom title for a feed.
 
-`PATCH /v2/subscriptions/525.json` will update the subscription with and id of `525`
+`PATCH /v2/subscriptions/525.json` will update the subscription with an id of `525`
 
 
 **Request**
@@ -150,6 +150,6 @@ Updating a subscrition can be used to set a custom title for a feed.
 
 Some proxies block or filter PATCH requests. A POST alternative is available for these cases:
 
-`POST /v2/subscriptions/525/update.json` will update the subscription with and id of `525`
+`POST /v2/subscriptions/525/update.json` will update the subscription with an id of `525`
 
 Thanks to [Oliver Fürniß](http://curioustimes.de/) for pointing this out.
