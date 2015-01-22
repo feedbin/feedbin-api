@@ -24,16 +24,18 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 ]
 ```
 
-| Parameter          | Required | Example                                                                                                             |
-| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------- |
-| `page: number`     | false    | `GET /v2/entries.json?page=2`  will get page two of the available entries                                           |
-| `since: date`      | false    | `GET /v2/entries.json?since=2013-02-02T14:07:33.000000Z` will get all entries created after the iso 8601 timestamp. |
-| `starred: boolean` | false    | `GET /v2/entries.json?starred=true`  will get all starred entries.                                                  |
-| `ids: number(s)`   | false    | `GET /v2/entries.json?ids=1,2,3`  will get the entries with the ids 1, 2 and 3.                                     |
-| `per_page: number` | false    | `GET /v2/entries.json?per_page=50`  will limit results to 50 per page.                                              |
+| Parameter                    | Required | Example                                                                                                             |
+| ---------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| `page: number`               | false    | `GET /v2/entries.json?page=2`  will get page two of the available entries                                           |
+| `since: date`                | false    | `GET /v2/entries.json?since=2013-02-02T14:07:33.000000Z` will get all entries created after the iso 8601 timestamp. |
+| `starred: boolean`           | false    | `GET /v2/entries.json?starred=true`  will get all starred entries.                                                  |
+| `ids: number(s)`             | false    | `GET /v2/entries.json?ids=1,2,3`  will get the entries with the ids 1, 2 and 3.                                     |
+| `per_page: number`           | false    | `GET /v2/entries.json?per_page=50`  will limit results to 50 per page.                                              |
+| `include_original: boolean`  | false    | `GET /v2/entries.json?include_original=true`  include original entry data if the entry has been updated.            |
+| `include_enclosure: boolean` | false    | `GET /v2/entries.json?include_enclosure=true`  include podcast/RSS enclosure data.                                  |
 
 
-Entries belong to feeds. To get all the entries for a feed use the `feed_id`. 
+Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
 
 - `GET /v2/feeds/203/entries.json` will return all entries for feed `203`
 

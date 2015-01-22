@@ -34,27 +34,17 @@ Create Unread Entries (mark as unread)
 }
 ```
 
-**Status Codes**
-
-- `200 OK` will be returned if the request is successful
-
-**Note** There is a limit of 1,000 entry_ids per request
-
-**Request**
-
-`POST /v2/subscriptions.json`
-
-```json
-{
-  "unread_entries": [4089, 4090, 4091]
-}
-```
-
 **Response**
 
 ```json
 [4089,4090,4091]
 ```
+
+**Status Codes**
+
+- `200 OK` will be returned if the request is successful
+
+**Note** There is a limit of 1,000 entry_ids per request
 
 The response will contain all of the entry_ids that were successfully marked as unread. If any ids that were sent are not returned in the response it usually means the user no longer has access to the feed the entry belongs to.
 
