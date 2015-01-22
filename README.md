@@ -16,9 +16,13 @@ API Objects
 - [Starred Entries](content/starred-entries.md)
 - [Taggings](content/taggings.md)
 - [Saved Searches](content/saved-searches.md)
+- [Recently Read Entries](content/recently-read-entries.md)
+- [Updated Entries](content/updated-entries.md)
 
 Changes
 -------
+- 2015-01-22: Added [Updated Entries API](content/updated-entries.md)
+- 2015-01-22: Added [Recently Read Entries API](content/recently-read-entries.md)
 - 2013-10-14: Added [Saved Search API](content/saved-searches.md)
 - 2013-05-20: Added `PATCH subscriptions.json` for editing feed titles to [Subscriptions](content/subscriptions.md#update-subscription)
 - 2013-05-20: Added `per_page` paramter to [Entries](content/entries.md)
