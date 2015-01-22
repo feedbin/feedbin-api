@@ -99,23 +99,23 @@ Sample Responses
 
 ```json
 {
-  id: 696388086,
-  feed_id: 47,
-  title: "Audio Hijack 3",
-  author: "John Gruber",
-  content: "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <p><strong>See also:</strong> <a href="http://sixcolors.com/post/2015/01/audio-hijack-3-a-huge-amazing-update/">Jason Snell&#8217;s take on the app and interview with Paul Kafasis</a>.</p> <div> <a title="Permanent link to ‘Audio Hijack 3’" href="http://daringfireball.net/linked/2015/01/20/audio-hijack-3">&nbsp;★&nbsp;</a> </div>",
-  summary: null,
-  url: "http://weblog.rogueamoeba.com/2015/01/20/audio-hijack-3-has-arrived/",
-  published: "2015-01-21T01:34:41.000000Z",
-  created_at: "2015-01-21T01:37:57.679046Z",
-  original: {
-    author: "John Gruber",
-    content: "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <div> <a title="Permanent link to ‘Audio Hijack 3’" href="http://daringfireball.net/linked/2015/01/20/audio-hijack-3">&nbsp;★&nbsp;</a> </div>",
-    title: "Audio Hijack 3",
-    url: "http://weblog.rogueamoeba.com/2015/01/20/audio-hijack-3-has-arrived/",
-    entry_id: "tag:daringfireball.net,2015:/linked//6.30480",
-    published: "2015-01-21T01:34:41.000Z",
-    data: null
+  "id": 696388086,
+  "feed_id": 47,
+  "title": "Audio Hijack 3",
+  "author": "John Gruber",
+  "content": "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <p><strong>See also:</strong> <a href="http://sixcolors.com/post/2015/01/audio-hijack-3-a-huge-amazing-update/">Jason Snell&#8217;s take on the app and interview with Paul Kafasis</a>.</p> <div> <a title="Permanent link to ‘Audio Hijack 3’" href="http://daringfireball.net/linked/2015/01/20/audio-hijack-3">&nbsp;★&nbsp;</a> </div>",
+  "summary": null,
+  "url": "http://weblog.rogueamoeba.com/2015/01/20/audio-hijack-3-has-arrived/",
+  "published": "2015-01-21T01:34:41.000000Z",
+  "created_at": "2015-01-21T01:37:57.679046Z",
+  "original": {
+    "author": "John Gruber",
+    "content": "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <div> <a title="Permanent link to ‘Audio Hijack 3’" href="http://daringfireball.net/linked/2015/01/20/audio-hijack-3">&nbsp;★&nbsp;</a> </div>",
+    "title": "Audio Hijack 3",
+    "url": "http://weblog.rogueamoeba.com/2015/01/20/audio-hijack-3-has-arrived/",
+    "entry_id": "tag:daringfireball.net,2015:/linked//6.30480",
+    "published": "2015-01-21T01:34:41.000Z",
+    "data": null
   }
 }
 ```
@@ -126,20 +126,20 @@ Sample Responses
 
 ```json
 {
-  id: 683590343,
-  feed_id: 908904,
-  title: "99: Pop-Up Headlights",
-  author: null,
-  content: "<ul> <li>Follow-Up: <ul><li>SSL <ul><li>In schools &amp; corporations</li> <li><a href="http://www.gogoair.com/">Gogo</a> actually <a href="http://www.neowin.net/news/gogo-inflight-internet-is-intentionally-issuing-fake-ssl-certificates">issues their own certificates to intercept SSL</a></li> <li><a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS</a></li></ul></li> <li>Using C# outside Windows (via <a href="https://twitter.com/praeclarum/status/551517070186541056">Frank A. Krueger</a>)</li> <li>Marco's <a href="https://golang.org">Go</a> feed poller <a href="https://twitter.com/marcoarment/status/552202315181326336">update</a> <ul><li><a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a></li> <li><a href="http://www.eclipse.org">Eclipse</a></li> <li><a href="http://www.rust-lang.org">Rust</a></li> <li><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating sequential processes</a></li></ul></li></ul></li> <li>Apple's Software Quality <ul><li><a href="http://www.marco.org/2015/01/04/apple-lost-functional-high-ground">Marco's post</a></li> <li><a href="http://www.marco.org/2015/01/05/popular-for-a-day">Marco's retrospective</a></li> <li><a href="http://video.cnbc.com/gallery/?video=3000343764">Mention on CNBC</a></li> <li><a href="http://5by5.tv/hypercritical/55">Hypercritical #55</a></li> <li><a href="http://www.caseyliss.com/2015/1/5/bravery">Casey's response to Marco</a></li> <li><a href="http://glog.glennf.com/blog/2015/1/6/the-software-and-services-apple-needs-to-fix">Glenn Fleishman's list</a></li></ul></li> <li>How to write for understanding <ul><li><a href="http://www.marco.org/2013/12/29/apple-doesnt-have-time">Marco laments about software quality in the past</a></li></ul></li> <li><a href="http://9to5mac.com/2015/01/06/macbook-air-12-inch-redesign/">Rumored 12" MacBook Air</a> <ul><li><a href="https://www.twelvesouth.com/product/plugbug">PlugBug</a></li> <li><a href="https://twitter.com/chockenberry/status/552928449250078721">Chockenberry on a potential ARM transition</a></li> <li><a href="https://en.wikipedia.org/wiki/Fat_binary">Fat binary</a></li> <li>Special thanks to <a href="http://david-smith.org/">_DavidSmith</a> for finding "bezels" in <a href="http://5by5.tv/hypercritical/22">Hypercritical #22</a></li></ul></li> </ul> <p>Sponsored by:</p> <ul> <li><a href="http://automatic.com/atp">Automatic</a>: Your smart driving assistant. Get $20 off with this link.</li> <li><a href="http://hover.com/atp">Hover</a>: The best way to buy and manage domain names. Use coupon code <strong>HIGHGROUND</strong> for 10% off.</li> <li><a href="https://caspersleep.com/atp">Casper</a>: A mattress with just the right sink, just the right bounce, for better nights and brighter days. Use code <strong>ATP</strong> for $50 off.</li> </ul>",
-  summary: null,
-  url: "http://atp.fm/episodes/99",
-  published: "2015-01-09T20:11:41.000000Z",
-  created_at: "2015-01-09T23:54:57.672303Z",
-  enclosure: {
-    enclosure_type: "audio/mpeg",
-    enclosure_url: "http://traffic.libsyn.com/atpfm/atp99.mp3",
-    enclosure_length: "86528647",
-    itunes_duration: "02:00:00"
+  "id": 683590343,
+  "feed_id": 908904,
+  "title": "99: Pop-Up Headlights",
+  "author": null,
+  "content": "<ul> <li>Follow-Up: <ul><li>SSL <ul><li>In schools &amp; corporations</li> <li><a href="http://www.gogoair.com/">Gogo</a> actually <a href="http://www.neowin.net/news/gogo-inflight-internet-is-intentionally-issuing-fake-ssl-certificates">issues their own certificates to intercept SSL</a></li> <li><a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS</a></li></ul></li> <li>Using C# outside Windows (via <a href="https://twitter.com/praeclarum/status/551517070186541056">Frank A. Krueger</a>)</li> <li>Marco's <a href="https://golang.org">Go</a> feed poller <a href="https://twitter.com/marcoarment/status/552202315181326336">update</a> <ul><li><a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a></li> <li><a href="http://www.eclipse.org">Eclipse</a></li> <li><a href="http://www.rust-lang.org">Rust</a></li> <li><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating sequential processes</a></li></ul></li></ul></li> <li>Apple's Software Quality <ul><li><a href="http://www.marco.org/2015/01/04/apple-lost-functional-high-ground">Marco's post</a></li> <li><a href="http://www.marco.org/2015/01/05/popular-for-a-day">Marco's retrospective</a></li> <li><a href="http://video.cnbc.com/gallery/?video=3000343764">Mention on CNBC</a></li> <li><a href="http://5by5.tv/hypercritical/55">Hypercritical #55</a></li> <li><a href="http://www.caseyliss.com/2015/1/5/bravery">Casey's response to Marco</a></li> <li><a href="http://glog.glennf.com/blog/2015/1/6/the-software-and-services-apple-needs-to-fix">Glenn Fleishman's list</a></li></ul></li> <li>How to write for understanding <ul><li><a href="http://www.marco.org/2013/12/29/apple-doesnt-have-time">Marco laments about software quality in the past</a></li></ul></li> <li><a href="http://9to5mac.com/2015/01/06/macbook-air-12-inch-redesign/">Rumored 12" MacBook Air</a> <ul><li><a href="https://www.twelvesouth.com/product/plugbug">PlugBug</a></li> <li><a href="https://twitter.com/chockenberry/status/552928449250078721">Chockenberry on a potential ARM transition</a></li> <li><a href="https://en.wikipedia.org/wiki/Fat_binary">Fat binary</a></li> <li>Special thanks to <a href="http://david-smith.org/">_DavidSmith</a> for finding "bezels" in <a href="http://5by5.tv/hypercritical/22">Hypercritical #22</a></li></ul></li> </ul> <p>Sponsored by:</p> <ul> <li><a href="http://automatic.com/atp">Automatic</a>: Your smart driving assistant. Get $20 off with this link.</li> <li><a href="http://hover.com/atp">Hover</a>: The best way to buy and manage domain names. Use coupon code <strong>HIGHGROUND</strong> for 10% off.</li> <li><a href="https://caspersleep.com/atp">Casper</a>: A mattress with just the right sink, just the right bounce, for better nights and brighter days. Use code <strong>ATP</strong> for $50 off.</li> </ul>",
+  "summary": null,
+  "url": "http://atp.fm/episodes/99",
+  "published": "2015-01-09T20:11:41.000000Z",
+  "created_at": "2015-01-09T23:54:57.672303Z",
+  "enclosure": {
+    "enclosure_type": "audio/mpeg",
+    "enclosure_url": "http://traffic.libsyn.com/atpfm/atp99.mp3",
+    "enclosure_length": "86528647",
+    "itunes_duration": "02:00:00"
   }
 }
 ```
