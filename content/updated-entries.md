@@ -5,9 +5,11 @@ Updated entries are entries that have been modified after they were originally p
 
 Feedbin stores both the original version of an entry and the latest version.
 
-The updated entry API can give you a list of entry ids that have been updated. After downloading the unread entry ids, you can get the entries themselves including the original content.
+The updated entry API gives you a list of entry ids that have been updated. After downloading the unread entry ids, you can get the entries themselves including the original content.
 
 `GET /v2/entries.json?include_original=true&ids=4088,4089,4090,4091`
+
+**Note** the `include_original=true` parameter will add the original content to the returned entries.
 
 On the web [Feedbin gives the user an option to show a diff of the original and the latest](http://blog.feedbin.com/2014/12/16/never-miss-an-update-with-the-new-updated-section/) which highlights what has changed.
 
