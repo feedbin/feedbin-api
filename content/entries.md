@@ -110,7 +110,7 @@ Sample Responses
   "created_at": "2015-01-21T01:37:57.679046Z",
   "original": {
     "author": "John Gruber",
-    "content": "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <div> <a title="Permanent link to ‘Audio Hijack 3’" href="http://daringfireball.net/linked/2015/01/20/audio-hijack-3">&nbsp;★&nbsp;</a> </div>",
+    "content": "<p>Gorgeous new interface in this major update to Rogue Amoeba&#8217;s venerable audio recording app. This is one of the best takes on Yosemite-style design I&#8217;ve seen.</p> <div> <a title=\"Permanent link to ‘Audio Hijack 3’\" href=\"http://daringfireball.net/linked/2015/01/20/audio-hijack-3\">&nbsp;★&nbsp;</a> </div>",
     "title": "Audio Hijack 3",
     "url": "http://weblog.rogueamoeba.com/2015/01/20/audio-hijack-3-has-arrived/",
     "entry_id": "tag:daringfireball.net,2015:/linked//6.30480",
