@@ -74,6 +74,28 @@ Create Subscription
 - `404 Not Found` will be returned if no feed is found at the `feed_url`
 - `300 Multiple Choices` will be returned if multiple feeds are found at the `feed_url` 
 
+If `201` or `302` are returned, the response will be the same as **Get Subscription**:
+
+**Request**
+
+```json
+{
+  "feed_url": "http://daringfireball.net/"
+}
+```
+
+**Response**
+
+```json
+{
+    "id": 4105850,
+    "created_at": "2017-10-28T14:30:39.324314Z",
+    "feed_id": 838741,
+    "title": "Daring Fireball",
+    "feed_url": "https://daringfireball.net/feeds/main",
+    "site_url": "https://daringfireball.net/"
+}
+```
 
 If a `300 Multiple Choices` is returned, it means the requested site exposes more than one feed. In this case the response will let you know what the options are. For example:
 
