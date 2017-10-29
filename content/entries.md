@@ -24,6 +24,32 @@ You can get all entries for a user sorted by `created_at` descending. The entry 
 ]
 ```
 
+Note that `title`, `author`, and `content` can be null. For example, using this feed:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+  <entry>
+    <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+  </entry>
+</feed>
+```
+
+```json
+[{
+    "id": 1570169709,
+    "feed_id": 1356310,
+    "title": null,
+    "author": null,
+    "summary": "",
+    "content": null,
+    "url": "http://s3.amazonaws.com",
+    "published": "2017-10-28T14:54:19.885152Z",
+    "created_at":"2017-10-28T14:54:19.885105Z"
+}]
+```
+
 | Parameter                       | Required | Example                                                                                                                                           |
 | ------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `page: number`                  | false    | `GET /v2/entries.json?page=2`  will get page two of the available entries                                                                         |
