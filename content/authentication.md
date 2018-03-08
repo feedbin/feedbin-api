@@ -1,18 +1,15 @@
 Authentication
 ==============
 
-Get authentication
-------------------
+### `GET /v2/authentication.json`
 
-You can check a users credentials with this endpoint.
-
-- `GET /v2/authentication.json`
-
-You'll need to include the credentials using HTTP basic auth. You can set this through the `Authorization` header or using your favorite HTTP library's built in support for it i.e.
+Returns status code. You can check a users credentials with this endpoint.
 
 ```bash
-curl -u 'example@example.com:password' https://api.feedbin.com/v2/authentication.json
+curl --request GET --user "example@example.com:password" https://api.feedbin.com/v2/authentication.json
 ```
+
+You'll need to include the credentials using HTTP basic auth. You can set this through the `Authorization` header or using your favorite HTTP library's built in support for it.
 
 **Status Codes**
 

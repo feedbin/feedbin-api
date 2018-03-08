@@ -1,12 +1,15 @@
 Entries
 =======
 
-Get Entries
------------
-
 You can get all entries for a user sorted by `created_at` descending. The entry attributes vary from the original feed in several ways. Links and image sources are rewritten to always point to the fully qualified URL. This means sanitizing/escaping content is up to you. The `published` date is converted to UTC.
 
-- `GET /v2/entries.json` will return all entries for the user.
+### `GET /v2/entries.json`
+
+Returns a paginated array of all entries for the user.
+
+```bash
+curl --request GET --user "example@example.com:password" https://api.feedbin.com/v2/entries.json
+```
 
 ```json
 [
@@ -62,9 +65,13 @@ Note that `title`, `author`, and `content` can be null. For example, using this 
 | `include_content_diff: boolean` | false    | `GET /v2/entries.json?include_content_diff=true`  include a diff of changed content. Result is HTML marked up to show differences. [Sample styles](https://github.com/feedbin/feedbin/blob/2610ba5aed103789d2a61708ffcd10d0432b5161/app/assets/stylesheets/_site.scss#L3246-L3309). |
 
 
-Entries belong to feeds. To get all the entries for a feed use the `feed_id`.
+### `GET /v2/feeds/203/entries.json`
 
-- `GET /v2/feeds/203/entries.json` will return all entries for feed `203`
+Returns a paginated array of all entries in feed_id 203
+
+```bash
+curl --request GET --user "example@example.com:password" https://api.feedbin.com/v2/feeds/203/entries.json
+```
 
 ```json
 [
@@ -92,10 +99,13 @@ Supports the same parameters as `/v2/entries.json`, except the `ids` parameter.
 - `404 Not Found` will be returned if no feed is found, or if the page number does not exist
 - `403 Forbidden` will be returned if the user does not subscribe to this feed
 
-Get Entry
----------
+### `GET /v2/entries/3648.json`
 
-- `GET /v2/entries/3648.json` will return just entry `3648`
+```bash
+curl --request GET --user "example@example.com:password" https://api.feedbin.com/v2/entries/3648.json
+```
+
+Returns a single entry object for id 3648
 
 ```json
 {
