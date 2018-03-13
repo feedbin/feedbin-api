@@ -83,48 +83,48 @@ An example with all of the keys populated would look like:
 
 ```json
 {
-    id: 1682191545,
-    feed_id: 1379740,
-    title: "Peter Kafka @pkafka",
-    author: "Peter Kafka",
-    summary: "In 2009, the big magazine publishers built their own digital service so they wouldn't be cut out by Apple or Google. Now they're selling to Apple.",
-    content: "<div>Content</div>",
-    url: "https://twitter.com/fromedome/status/973315765393920000",
-    published: "2018-03-12T21:52:16.000000Z",
-    created_at: "2018-03-12T22:55:53.437304Z",
-    original: {
-        author: "Brent Simmons",
-        content: "<div>Content</div>",
-        title: "Catching Up on The Omni Show",
-        url: "https://www.omnigroup.com/blog/entry/catching-up-on-the-omni-show",
-        entry_id: "https://www.omnigroup.com/blog/entry/catching-up-on-the-omni-show",
-        published: "2018-03-12T21:24:00.000Z",
-        data: {}
+    "id": 1682191545,
+    "feed_id": 1379740,
+    "title": "Peter Kafka @pkafka",
+    "author": "Peter Kafka",
+    "summary": "In 2009, the big magazine publishers built their own digital service so they wouldn't be cut out by Apple or Google. Now they're selling to Apple.",
+    "content": "<div>Content</div>",
+    "url": "https://twitter.com/fromedome/status/973315765393920000",
+    "published": "2018-03-12T21:52:16.000000Z",
+    "created_at": "2018-03-12T22:55:53.437304Z",
+    "original": {
+        "author": "Brent Simmons",
+        "content": "<div>Content</div>",
+        "title": "Catching Up on The Omni Show",
+        "url": "https://www.omnigroup.com/blog/entry/catching-up-on-the-omni-show",
+        "entry_id": "https://www.omnigroup.com/blog/entry/catching-up-on-the-omni-show",
+        "published": "2018-03-12T21:24:00.000Z",
+        "data": {}
     },
-    twitter_id: 973315765393920000,
-    twitter_thread_ids: [973315765393920000, 973315765393920001],
+    "twitter_id": 973315765393920000,
+    "twitter_thread_ids": [973315765393920000, 973315765393920001],
     {
-        original_url: "http://www.macdrifter.com/uploads/2018/03/ScreenShot20180312_044129.jpg",
-        size_1: {
-            cdn_url: "https://images.feedbinusercontent.com/85996e1/85996e10ef95a3b96a914e67dfc08d5d3362c6e0.jpg",
-            width: 542,
-            height: 304
+        "original_url": "http://www.macdrifter.com/uploads/2018/03/ScreenShot20180312_044129.jpg",
+        "size_1": {
+            "cdn_url": "https://images.feedbinusercontent.com/85996e1/85996e10ef95a3b96a914e67dfc08d5d3362c6e0.jpg",
+            "width": 542,
+            "height": 304
         }
     },
-    enclosure: {
-        enclosure_url: "http://traffic.libsyn.com/atpfm/atp264.mp3",
-        enclosure_type: "audio/mpeg",
-        enclosure_length: "54103635",
-        itunes_duration: "01:51:35",
-        itunes_image: "http://static1.squarespace.com/static/513abd71e4b0fe58c655c105/t/52c45a37e4b0a77a5034aa84/1388599866232/1500w/Artwork.jpg"
+    "enclosure": {
+        "enclosure_url": "http://traffic.libsyn.com/atpfm/atp264.mp3",
+        "enclosure_type": "audio/mpeg",
+        "enclosure_length": "54103635",
+        "itunes_duration": "01:51:35",
+        "itunes_image": "http://static1.squarespace.com/static/513abd71e4b0fe58c655c105/t/52c45a37e4b0a77a5034aa84/1388599866232/1500w/Artwork.jpg"
     }
-    extracted_articles: [
+    "extracted_articles": [
         {
-            url: "https://www.recode.net/2018/3/12/17109592/apple-buys-texture-magazine-next-issue-media-eddy-cue-sxsw?utm_campaign=recode.net&utm_content=chorus&utm_medium=social&utm_source=twitter",
-            title: "Apple is buying Texture, the digital magazine distributor",
-            host: "www.recode.net",
-            author: "Peter Kafka",
-            content: "<div>Content</div>"
+            "url": "https://www.recode.net/2018/3/12/17109592/apple-buys-texture-magazine-next-issue-media-eddy-cue-sxsw?utm_campaign=recode.net&utm_content=chorus&utm_medium=social&utm_source=twitter",
+            "title": "Apple is buying Texture, the digital magazine distributor",
+            "host": "www.recode.net",
+            "author": "Peter Kafka",
+            "content": "<div>Content</div>"
         }
     ]
 }

@@ -20,11 +20,11 @@ GET /v2/entries.json?mode=extended
 
 ```json
 {
-    id: 1682191545,
-    feed_id: 1379740,
+    "id": 1682191545,
+    "feed_id": 1379740,
     ...
-    twitter_id: 973315765393920000,
-    twitter_thread_ids: [973315765393920000, 973315765393920001],
-    extracted_articles: []
+    "twitter_id": 973315765393920000,
+    "twitter_thread_ids": [973315765393920000, 973315765393920001],
+    "extracted_articles": []
 }
 ```
