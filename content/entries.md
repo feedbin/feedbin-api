@@ -117,7 +117,7 @@ An example with all of the keys populated would look like:
         "enclosure_length": "54103635",
         "itunes_duration": "01:51:35",
         "itunes_image": "http://static1.squarespace.com/static/513abd71e4b0fe58c655c105/t/52c45a37e4b0a77a5034aa84/1388599866232/1500w/Artwork.jpg"
-    }
+    },
     "extracted_articles": [
         {
             "url": "https://www.recode.net/2018/3/12/17109592/apple-buys-texture-magazine-next-issue-media-eddy-cue-sxsw?utm_campaign=recode.net&utm_content=chorus&utm_medium=social&utm_source=twitter",
