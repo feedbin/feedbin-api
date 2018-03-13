@@ -103,7 +103,7 @@ An example with all of the keys populated would look like:
     },
     "twitter_id": 973315765393920000,
     "twitter_thread_ids": [973315765393920000, 973315765393920001],
-    {
+    "images": {
         "original_url": "http://www.macdrifter.com/uploads/2018/03/ScreenShot20180312_044129.jpg",
         "size_1": {
             "cdn_url": "https://images.feedbinusercontent.com/85996e1/85996e10ef95a3b96a914e67dfc08d5d3362c6e0.jpg",
