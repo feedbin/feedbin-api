@@ -15,6 +15,7 @@ API Objects
 - [Unread Entries](content/unread-entries.md)
 - [Starred Entries](content/starred-entries.md)
 - [Taggings](content/taggings.md)
+- [Tags](content/tags.md)
 - [Saved Searches](content/saved-searches.md)
 - [Recently Read Entries](content/recently-read-entries.md)
 - [Updated Entries](content/updated-entries.md)
