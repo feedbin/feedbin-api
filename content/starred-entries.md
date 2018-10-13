@@ -10,8 +10,17 @@ To actually retrieve the entries that have been starred. Please note, that you c
 Get Starred Entries
 -------------------
 
- - `GET /v2/starred_entries.json` will return an array of entry_ids
+- `GET /v2/starred_entries.json` will return an array of entry_ids
 
+**Request**
+
+```bash
+curl --request GET \
+--user "example@example.com:password" \
+https://api.feedbin.com/v2/starred_entries.json
+```
+
+**Response**
 
 ```json
 [4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097]
@@ -28,26 +37,12 @@ Create Starred Entries
 
 **Request**
 
-```json
-{
-  "starred_entries": [4089, 4090, 4091]
-}
-```
-
-**Status Codes**
-
-- `200 OK` will be returned if the request is successful
-
-**Note** There is a limit of 1,000 entry_ids per request
-
-**Request**
-
-`POST /v2/subscriptions.json`
-
-```json
-{
-  "starred_entries": [4089, 4090, 4091]
-}
+```bash
+curl --request POST \
+--user "example@example.com:password" \
+--header "Content-Type: application/json; charset=utf-8" \
+--data-ascii '{"starred_entries": [4089, 4090, 4091]}' \
+https://api.feedbin.com/v2/starred_entries.json
 ```
 
 **Response**
@@ -58,6 +53,13 @@ Create Starred Entries
 
 The response will contain all of the entry_ids that were successfully starred. If any ids that were sent are not returned in the response it usually means the user no longer has access to the feed the entry belongs to.
 
+**Status Codes**
+
+- `200 OK` will be returned if the request is successful
+
+**Note** There is a limit of 1,000 entry_ids per request
+
+
 Delete Starred Entries (unstar)
 -------------------------------
 
@@ -65,10 +67,18 @@ Delete Starred Entries (unstar)
 
 **Request**
 
+```bash
+curl --request DELETE \
+--user "example@example.com:password" \
+--header "Content-Type: application/json; charset=utf-8" \
+--data-ascii '{"starred_entries": [4089, 4090, 4091]}' \
+https://api.feedbin.com/v2/starred_entries.json
+```
+
+**Response**
+
 ```json
-{
-  "starred_entries": [4089, 4090, 4091]
-}
+[4089,4090,4091]
 ```
 
 **Status Codes**
