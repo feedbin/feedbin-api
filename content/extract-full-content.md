@@ -5,7 +5,7 @@ If you have a native app that supports Feedbin, you can use Feedbin's full conte
 
 The service uses [Mercury Parser](https://github.com/postlight/mercury-parser) to attempt to extract the full content of a webpage.
 
-In order to use the service, you need a username and signing key. The signing key is used to generate an HMAC signature to authenticate your request.
+In order to use the service, you need a username and signing key. The signing key is used to generate an HMAC-SHA1 signature to authenticate your request.
 
 An example request looks like:
 
@@ -16,7 +16,7 @@ https://extract.feedbin.com/parser/:username/:signature?base64_url=:base64_url
 The parts that you need are:
 
 - `username` your username
-- `signature` the HMAC signature of the URL you want to parse
+- `signature` the HMAC-SHA1 signature of the URL you want to parse
 - `base64_encoded_url` base64 encoded version of the URL you want to parse
 
 The URL is base64 encoded to avoid any issues in the way different systems encode URLs. It must use the [RFC 4648](https://tools.ietf.org/html/rfc4648#section-5) url-safe variant with no newlines.
@@ -74,7 +74,6 @@ With the output:
     "total_pages": 1,
     "rendered_pages": 1
 }
-```
 ```
 
 You can use this as a reference for matching your implementation.
