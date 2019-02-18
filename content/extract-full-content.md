@@ -10,7 +10,7 @@ In order to use the service, you need a username and signing key. The signing ke
 An example request looks like:
 
 ```
-https://extract.feedbin.com/parser/:username/:signature?base64_url=:base64_encoded_url
+https://extract.feedbin.com/parser/:username/:signature?base64_url=:base64_url
 ```
 
 The parts that you need are:
