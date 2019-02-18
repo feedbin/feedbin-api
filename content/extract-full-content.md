@@ -15,17 +15,17 @@ https://extract.feedbin.com/parser/:username/:signature?base64_url=:base64_encod
 
 The parts that you need are:
 
-`username`: your username
-`signature`: the HMAC signature of the URL you want to parse
-`base64_encoded_url`: base64 encoded version of the URL you want to parse
+- `username` your username
+- `signature` the HMAC signature of the URL you want to parse
+- `base64_encoded_url` base64 encoded version of the URL you want to parse
 
 The URL is base64 encoded to avoid any issues in the way different systems encode URLs. It must use the [RFC 4648](https://tools.ietf.org/html/rfc4648#section-5) url-safe variant with no newlines.
 
 If your platform does not offer a URL safe base64 option, you can replicate it. First create the base64 encoded string. Then replace the following characters:
 
-`+` => `-`
-`/` => `_`
-`\n` => ``
+- `+` => `-`
+- `/` => `_`
+- `\n` => ""
 
 
 ```ruby
@@ -58,22 +58,24 @@ https://extract.feedbin.com/parser/username/e4696f8630bb68c21d77a9629ce8d063d8e5
 With the output:
 
 ```
+```json
 {
-title: "Private by Default",
-author: null,
-date_published: "2018-09-11T00:00:00.000Z",
-dek: null,
-lead_image_url: "https://assets.feedbin.com/assets-site/blog/2018-09-11/embed-3f43088538ae5ed7e585c00013adc13a915fd35de31990b3081a085b963ed7dd.png",
-content: "<div>content</div>",
-next_page_url: null,
-url: "https://feedbin.com/blog/2018/09/11/private-by-default/",
-domain: "feedbin.com",
-excerpt: "September 11, 2018 by Ben Ubois I want Feedbin to be the opposite of Big Social. I think people should have the right not to be tracked on the Internet and Feedbin can help facilitate that. Since&hellip;",
-word_count: 787,
-direction: "ltr",
-total_pages: 1,
-rendered_pages: 1
+    "title": "Private by Default",
+    "author": null,
+    "date_published": "2018-09-11T00:00:00.000Z",
+    "dek": null,
+    "lead_image_url": "https://assets.feedbin.com/assets-site/blog/2018-09-11/embed-3f43088538ae5ed7e585c00013adc13a915fd35de31990b3081a085b963ed7dd.png",
+    "content": "<div>content</div>",
+    "next_page_url": null,
+    "url": "https://feedbin.com/blog/2018/09/11/private-by-default/",
+    "domain": "feedbin.com",
+    "excerpt": "September 11, 2018 by Ben Ubois I want Feedbin to be the opposite of Big Social. I think people should have the right not to be tracked on the Internet and Feedbin can help facilitate that. Since&hellip;",
+    "word_count": 787,
+    "direction": "ltr",
+    "total_pages": 1,
+    "rendered_pages": 1
 }
+```
 ```
 
 You can use this as a reference for matching your implementation.
