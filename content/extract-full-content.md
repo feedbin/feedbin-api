@@ -57,7 +57,6 @@ https://extract.feedbin.com/parser/username/e4696f8630bb68c21d77a9629ce8d063d8e5
 
 With the output:
 
-```
 ```json
 {
     "title": "Private by Default",
