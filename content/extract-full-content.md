@@ -17,7 +17,7 @@ The parts that you need are:
 
 - `username` your username
 - `signature` the HMAC-SHA1 signature of the URL you want to parse
-- `base64_encoded_url` base64 encoded version of the URL you want to parse
+- `base64_url` base64 encoded version of the URL you want to parse
 
 The URL is base64 encoded to avoid any issues in the way different systems encode URLs. It must use the [RFC 4648](https://tools.ietf.org/html/rfc4648#section-5) url-safe variant with no newlines.
 
