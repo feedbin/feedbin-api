@@ -3,7 +3,7 @@ Authentication
 
 ### `GET /v2/icons.json`
 
-Returns the feed icons (favicons) for all the feeds a user is subscribed to.
+Returns the feed icons (favicons) for all the feeds a user is subscribed to. Icons are resized to a max resolution of 32x32. If an icon is missing it means Feedbin was unable to find it.
 
 ```bash
 curl --request GET --user "example@example.com:password" https://api.feedbin.com/v2/icons.json
