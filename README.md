@@ -19,6 +19,7 @@ API Objects
 - [Saved Searches](content/saved-searches.md)
 - [Recently Read Entries](content/recently-read-entries.md)
 - [Updated Entries](content/updated-entries.md)
+- [Icons](content/icons.md)
 - [Supporting Twitter](content/supporting-twitter.md)
 
 Changes
