@@ -1,5 +1,5 @@
-Authentication
-==============
+Icons
+=====
 
 ### `GET /v2/icons.json`
 
