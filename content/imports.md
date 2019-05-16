@@ -87,7 +87,7 @@ curl --request GET --user "example@example.com:password" https://api.feedbin.com
     {
       "title": "kottke.org",
       "feed_url": "http://feeds.kottke.org/main",
-      "status": "failed",
+      "status": "failed"
     }
   ]
 }
