@@ -19,7 +19,7 @@ curl --request POST --user "example@example.com:password" --data-binary "@/path/
 {
    "id": 6,
    "complete": false,
-   "created_at": "2019-05-16T20:27:47.038Z"
+   "created_at": "2019-05-16T20:27:47.038Z",
    "import_items": [
      {
        "title": "Daring Fireball",
@@ -70,9 +70,9 @@ curl --request GET --user "example@example.com:password" https://api.feedbin.com
 
 ```json
 {
-  "created_at": "2019-05-16T20:07:13.043Z",
   "id": 4,
-  "complete": true
+  "complete": true,
+  "created_at": "2019-05-16T20:07:13.043Z",
   "import_items": [
     {
       "title": "Daring Fireball",
