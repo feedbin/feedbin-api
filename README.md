@@ -3,8 +3,6 @@ Feedbin API V2
 
 This is the official documentation for the Feedbin REST-style API.
 
-V1 of the api has been deprecated.
-
 API Objects
 -----------
 
@@ -20,10 +18,18 @@ API Objects
 - [Recently Read Entries](content/recently-read-entries.md)
 - [Updated Entries](content/updated-entries.md)
 - [Icons](content/icons.md)
+- [Imports](content/imports.md)
+
+Tech Notes
+----------
+
+- [Extracting Full Content](content/extract-full-content.md)
 - [Supporting Twitter](content/supporting-twitter.md)
 
 Changes
 -------
+- 2019-05-17: Added [Imports API](content/icons.md)
+- 2019-03-13: Added [Icons API](content/icons.md)
 - 2015-01-22: Added [Updated Entries API](content/updated-entries.md)
 - 2015-01-22: Added [Recently Read Entries API](content/recently-read-entries.md)
 - 2013-10-14: Added [Saved Search API](content/saved-searches.md)
@@ -108,4 +114,4 @@ Thanks to [Stefan Pauwels](http://zoziapps.ch/) for sharing this tip.
 Domain
 ------
 
-Until 2014-03-14 the API hostname was `api.feedbin.me`. `api.feedbin.me` will remain available indefinitely but `api.feedbin.com` is recommended because it is the new primary domain.
+Until 2014-03-14 the API hostname was `api.feedbin.me`. `api.feedbin.me` will remain available but `api.feedbin.com` is recommended because it is the new primary domain.
