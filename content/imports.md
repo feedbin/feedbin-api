@@ -1,8 +1,6 @@
 Imports
 =======
 
-Warning: This API is not final and might change.
-
 The Imports API can be used to import OPML files and get the status of an import.
 
 ### `POST /v2/imports.json`
