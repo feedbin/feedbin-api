@@ -5,10 +5,10 @@ The Imports API can be used to import OPML files and get the status of an import
 
 ### `POST /v2/imports.json`
 
-Create a new import. The POST body should be an XML string. Returns the import along with the status of each of the import_items.
+Create a new import. The POST body should be an XML string. Returns the import along with the status of each of the import_items. The `Content-Type` header must be set to `text/xml`.
 
 ```bash
-curl --request POST --user "example@example.com:password" --data-binary "@/path/to/subscriptions.xml" https://api.feedbin.com/v2/imports.json
+curl --request POST --user "example@example.com:password" --header "Content-Type: text/xml" --data-binary "@/path/to/subscriptions.xml" https://api.feedbin.com/v2/imports.json
 ```
 
 **Response**
@@ -28,7 +28,7 @@ curl --request POST --user "example@example.com:password" --data-binary "@/path/
 }
 ```
 
-The `id` can be used to get the status of the import at `/v2/imports/6.json`.
+The `id` can be used to get the status of the import at `/v2/imports/6.json`. 
 
 ### `GET /v2/imports.json`
 
