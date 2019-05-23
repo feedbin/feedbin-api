@@ -8,7 +8,6 @@ API Objects
 
 - [Authentication](content/authentication.md)
 - [Subscriptions](content/subscriptions.md)
-- [Feeds](content/feeds.md)
 - [Entries](content/entries.md)
 - [Unread Entries](content/unread-entries.md)
 - [Starred Entries](content/starred-entries.md)
