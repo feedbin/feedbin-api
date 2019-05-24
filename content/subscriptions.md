@@ -22,6 +22,8 @@ Get Subscriptions
 | Parameter     | Required | Example                                                                                                                          |
 | ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `since: date` | false    | `GET /v2/subscriptions.json?since=2013-03-08T09:44:20.449047Z` will get all subscriptions created after the iso 8601 timestamp.  |
+| `mode: enum`  | false    | `GET /v2/subscriptions.json?mode=extended`  the only mode available is `extended`. This includes more metadata for the feed.     |
+
 
 **Status Codes**
 
@@ -43,6 +45,29 @@ Get Subscription
   "site_url": "http://daringfireball.net/"
 }
 ```
+
+#### About `extended` Mode
+
+The `extended` mode includes a additional meta-data for subscriptions. Currently this includes a `json_feed` key with all of the additional metadata that a [JSON Feed offers](https://jsonfeed.org/version/1).
+
+[
+  {
+    "id" : 1,
+    "feed_id" : 1,
+    "site_url" : "https://micro.blog/",
+    "title" : "Micro.blog - manton timeline",
+    "feed_url" : "https://micro.blog/feeds/manton.json",
+    "created_at" : "2019-05-23T23:49:14.487938Z",
+    "json_feed" : {
+      "favicon" : "https://micro.blog/images/icons/favicon_32.png",
+      "feed_url" : "https://micro.blog/feeds/manton.json",
+      "icon" : "https://micro.blog/images/icons/favicon_256.png",
+      "version" : "https://jsonfeed.org/version/1",
+      "home_page_url" : "https://micro.blog/",
+      "title" : "Micro.blog - manton timeline"
+    }
+  }
+]
 
 **Status Codes**
 
