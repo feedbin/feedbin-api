@@ -27,7 +27,7 @@ Tech Notes
 
 Changes
 -------
-- 2019-05-17: Added [Imports API](content/icons.md)
+- 2019-05-17: Added [Imports API](content/imports.md)
 - 2019-03-13: Added [Icons API](content/icons.md)
 - 2015-01-22: Added [Updated Entries API](content/updated-entries.md)
 - 2015-01-22: Added [Recently Read Entries API](content/recently-read-entries.md)
