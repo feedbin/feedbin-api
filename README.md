@@ -91,6 +91,8 @@ The possible rel values are:
 - `next` The URL of the next page of results.
 - `last` The URL of the last page of results.
 
+On paginated resources there is a header in the response called: `X-Feedbin-Record-Count`. This header reports the total number of records for a resource.
+
 Dates
 -----
 The Feedbin API uses the [ISO 8601](http://www.w3.org/TR/NOTE-datetime) date format. All responses will include dates formatted to this spec and all requests should stick to it as well. The dates are as high resolution as possible to allow for rapid state changes. When using the `since` parameter it is best to include the date exactly as it was returned by the server when the last request was made. Rounding down to the nearest second will most likely cause duplicates.
