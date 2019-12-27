@@ -27,6 +27,7 @@ Tech Notes
 
 Changes
 -------
+- 2019-12-27: Added [Pages API](content/pages.md)
 - 2019-05-17: Added [Imports API](content/imports.md)
 - 2019-03-13: Added [Icons API](content/icons.md)
 - 2015-01-22: Added [Updated Entries API](content/updated-entries.md)
