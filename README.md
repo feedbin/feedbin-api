@@ -18,6 +18,7 @@ API Objects
 - [Updated Entries](content/updated-entries.md)
 - [Icons](content/icons.md)
 - [Imports](content/imports.md)
+- [Pages](content/pages.md)
 
 Tech Notes
 ----------
