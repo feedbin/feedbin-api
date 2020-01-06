@@ -94,13 +94,13 @@ The `extracted_content_url` is the link to another [Feedbin service](https://fee
 
 The `extended` mode includes a lot of additional meta-data for entries including the usual `id`, `feed_id`, `title`, `author`, `summary`, `content`, `url`, `published`, `created_at`. As well as these additions:
 
-`original`: The JSON for the full original entry, if this entry has been updated
-`images`: The image that Feedbin has extracted to be associated with the entry.
-`enclosure`: Podcast related metadata
-`twitter_id`: If the entry is a tweet, this is the id of the tweet on twitter. You can use this with the Twitter API to load tweets in your app.
-`twitter_thread_ids`: If the entry has a related Twitter thread, this array of ids can be used with the Twitter API to load to load the full thread. The ids are sorted in ascending chronological order.
-`extracted_articles`: If the entry is a tweet that links to articles, Feedbin attempts to extract the article content and provides it via the API.
-`json_feed`: If the entry is from a JSON Feed, this contains the additional metadata that [JSON Feed offers](https://jsonfeed.org/version/1).
+- `original`: The JSON for the full original entry, if this entry has been updated
+- `images`: The image that Feedbin has extracted to be associated with the entry.
+- `enclosure`: Podcast related metadata
+- `twitter_id`: If the entry is a tweet, this is the id of the tweet on twitter. You can use this with the Twitter API to load tweets in your app.
+- `twitter_thread_ids`: If the entry has a related Twitter thread, this array of ids can be used with the Twitter API to load to load the full thread. The ids are sorted in ascending chronological order.
+- `extracted_articles`: If the entry is a tweet that links to articles, Feedbin attempts to extract the article content and provides it via the API.
+- `json_feed`: If the entry is from a JSON Feed, this contains the additional metadata that [JSON Feed offers](https://jsonfeed.org/version/1).
 
 
 Extended mode was created to make sure the original data would stay the same. The `extended` mode has a different policy where new data may be added over time. The only thing to keep in mind here is that there may be additional keys in the future and that your JSON parser should be flexible enough to deal with that. Keys will not be removed and their purpose will not change.
