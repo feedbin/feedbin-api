@@ -58,6 +58,11 @@ Get Updated Entries
 [4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097]
 ```
 
+| Parameter                       | Required | Example                                                                                                                                           |
+| ------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `since: date`                   | false    | `GET /v2/updated_entries.json?since=2013-02-02T14:07:33.000000Z` will get all updated_entries updated after the iso 8601 timestamp.               |               |
+
+
 **Status Codes**
 
 - `200 OK` will be returned
