@@ -50,6 +50,7 @@ Get Subscription
 
 The `extended` mode includes a additional meta-data for subscriptions. Currently this includes a `json_feed` key with all of the additional metadata that a [JSON Feed offers](https://jsonfeed.org/version/1).
 
+```json
 [
   {
     "id" : 1,
@@ -68,6 +69,7 @@ The `extended` mode includes a additional meta-data for subscriptions. Currently
     }
   }
 ]
+```
 
 **Status Codes**
 
