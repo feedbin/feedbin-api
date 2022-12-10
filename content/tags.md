@@ -1,6 +1,28 @@
 Tags
 ====
 
+Get Tags
+------------
+
+### `GET /v2/tags.json` will return tags
+
+```json
+[
+   {
+      "id":52,
+      "name":"Blogs"
+   },
+   {
+      "id":48092,
+      "name":"Cybersecurity"
+   },
+   {
+      "id":18050,
+      "name":"Engineering Blogs"
+   }
+]
+```
+
 ### `POST /v2/tags.json`
 
 Rename a tag.
