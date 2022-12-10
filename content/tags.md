@@ -4,7 +4,7 @@ Tags
 Get Tags
 ------------
 
-### `GET /v2/tags.json` will return tags
+- `GET /v2/tags.json` will return tags.
 
 ```json
 [
