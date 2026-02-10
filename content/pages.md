@@ -44,3 +44,9 @@ If successful, the response will be the full [entry](entries.md).
     "url": "https://feedbin.com/blog/2018/09/11/private-by-default/"
 }
 ```
+
+Delete Page
+-----------
+
+`DELETE /v2/pages/3.json` will delete the page with an id of `3`
+
