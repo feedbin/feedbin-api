@@ -277,3 +277,15 @@ Sample Responses
   }
 }
 ```
+
+Get Entry Text
+--------------
+
+- `GET /v2/entries/1/text` will return the content of the entry with an id of `1` as plain text, with the HTML stripped
+
+The response has the `Content-Type: text/plain` header.
+
+**Status Codes**
+
+- `200 OK` will be returned if the user has access to the entry
+- `404 Not Found` will be returned if the entry does not exist or the user does not have access to it

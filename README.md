@@ -14,11 +14,13 @@ API Objects
 - [Taggings](content/taggings.md)
 - [Tags](content/tags.md)
 - [Saved Searches](content/saved-searches.md)
+- [Actions](content/actions.md)
 - [Recently Read Entries](content/recently-read-entries.md)
 - [Updated Entries](content/updated-entries.md)
 - [Icons](content/icons.md)
 - [Imports](content/imports.md)
 - [Pages](content/pages.md)
+- [Entry Counts](content/entry-counts.md)
 
 Tech Notes
 ----------
