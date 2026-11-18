@@ -20,7 +20,6 @@ API Objects
 - [Icons](content/icons.md)
 - [Imports](content/imports.md)
 - [Pages](content/pages.md)
-- [Suggested Feeds](content/suggested-feeds.md)
 - [Entry Counts](content/entry-counts.md)
 
 Tech Notes
